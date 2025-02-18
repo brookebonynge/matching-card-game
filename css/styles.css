@@ -1,0 +1,205 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: #F7CBC9;
+}
+
+#portfolioBtn {
+    display: block;
+    left: 20px auto;
+    background:url(../figma/B\ DESIGNS.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 60px;
+    padding: 20px;
+    background-color: #EA6435;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    margin-top: 5vh;
+    margin-left: 5vh;
+}
+#portfolioBtn:hover {
+    background:url(../figma/B-DESIGNS-hover.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    background-color: #F7CBC9;
+    outline: 1px solid #EA6435;
+
+}
+
+h1{
+    background: url(../figma/Matching-Card-Game.png);
+    color: transparent;
+    width: fit-content;
+    place-self: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5vh;
+
+}
+
+.game-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+
+#game-board{
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 30px;
+    justify-content: center;
+    background: #FBEAEB;
+    padding: 20px;
+    border-radius: 10px;
+    max-width:fit-content;
+    place-self: center;
+}
+
+.card {
+    width: 100px;
+    height: 150px;
+    background:url(../figma/game-card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 0.3s;
+
+}
+
+.card-container {
+    perspective: 1000px;
+}
+
+.card:hover {
+    rotate: y 45deg;
+    transition: 0.3s;
+}
+.card img {
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+
+.card.flipped img {
+    display: block;
+}
+
+/* Front & Back */
+.card-front, .card-back {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+}
+
+/* Front Side */
+.card-front {
+    background: #EA6435;
+    color: white;
+}
+
+/* Back Side */
+.card-back {
+    background: #EA6435;
+    color: white;
+    rotate: y 180deg;
+}
+
+.card.flipped {
+    background:url(../figma/not-matched-card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    rotate: y 180deg;
+
+}
+
+.card.matched {
+    background:url(../figma/flipped-card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+#restartBtn {
+    font-size: 40px;
+    background:url(../figma/reset-icon.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #EA6435;
+    border: none;
+    cursor: pointer;
+    margin: 50px;
+    transition: 0.3s;
+    /* position: fixed; 
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); */
+    
+}
+
+#restartBtn:hover {
+    background:url(../figma/reset-icon-hover.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    rotate: 360deg;
+    background-color: #F7CBC9;
+    outline: 1px solid #EA6435;
+    
+}
+
+/* @keyframes restartBtnhover {
+    from{
+        rotate: 0deg;
+    }
+    to {
+        rotate: 360deg;
+    }
+} */
+
+    /* RESET BUTTON
+    width: 5;
+    height: 5;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    
+    #portfolioBtn {
+    display: block;
+    left: 20px auto;
+    padding: 15px 30px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    background-color: #EA6435;
+    color: #FBEAEB;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#portfolioBtn:hover {
+    background-color: #F7CBC9;
+    color:#EA6435;
+    outline: #EA6435;
+
+}
