@@ -88,10 +88,20 @@ function checkMatch(){
     selectedCards = [];
 
     if (matchedCards.length === cardArray.length) {
-        setTimeout(()=> alert("🎉 You Win!"), 500);
+        setTimeout(() => {
+            document.getElementById("winPopup").style.display = "flex"; }, 500);
         
     }
 }
+
+document.querySelector(".close-btn").addEventListener("click", function() {
+    document.getElementById("winPopup").style.display = "none";
+});
+
+document.getElementById("playAgainBtn").addEventListener("click", function() {
+    document.getElementById("winPopup").style.display = "none"; 
+    restartGame(); 
+});
 
 document.getElementById("restartBtn").addEventListener("click", function() {
     restartGame();
