@@ -181,7 +181,7 @@ h2{
 }
 
 p{
-    background: url(../figma/congrats-matched-cards.png);
+    background: url(../figma/matched-cards-congrats.png);
     color: transparent;
     width: fit-content;
     place-self: center;
@@ -219,18 +219,30 @@ p{
 }
 
 #playAgainBtn {
+    width: 70px;
+    height: 30px;
+    background: url(../figma/Play\ Again.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: 10px;
     padding: 10px 20px;
-    background: #EA6435;
-    color: white;
+    background-color:#EA6435;
     border: none;
     border-radius: 50px;
     cursor: pointer;
 }
 
 #playAgainBtn:hover {
-    background: #F7CBC9;
-    color: #EA6435;
+    width: 70px;
+    height: 30px;
+    background: url(../figma/Play-Again-Hover.png);
+    background-size:60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50px;
+    background-color: #F7CBC9;
+    outline: 1px solid #EA6435;
 }
 
 /* @keyframes restartBtnhover {
