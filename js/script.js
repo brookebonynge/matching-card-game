@@ -15,7 +15,13 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "strawberry", img: "🍓" },  
         { name: "strawberry", img: "🍓" },  
         { name: "watermelon", img: "🍉" }, 
-        { name: "watermelon", img: "🍉" }  
+        { name: "watermelon", img: "🍉" },
+        { name: "orange", img: "🍊" }, 
+        { name: "orange", img: "🍊" },
+        { name: "pear", img: "🍐" }, 
+        { name: "pear", img: "🍐" },
+        { name: "kiwi", img: "🥝" }, 
+        { name: "kiwi", img: "🥝" }
     ];
 
     const gameBoard = document.getElementById("game-board");
