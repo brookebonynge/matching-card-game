@@ -11,8 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "cherry", img: "🍒" },
         { name: "cherry", img: "🍒" },
         { name: "grape", img: "🍇" },
-        { name: "grape", img: "🍇" }
-        
+        { name: "grape", img: "🍇" },
+        { name: "strawberry", img: "🍓" },  
+        { name: "strawberry", img: "🍓" },  
+        { name: "watermelon", img: "🍉" }, 
+        { name: "watermelon", img: "🍉" }  
     ];
 
     const gameBoard = document.getElementById("game-board");
@@ -89,9 +92,9 @@ document.getElementById("restartBtn").addEventListener("click", function() {
 });
 
 function restartGame() {
-    matchedCards = []; // Reset matched cards array
-    selectedCards = []; // Reset selected cards array
-    createBoard(); // Recreate the board with shuffled cards
+    matchedCards = []; 
+    selectedCards = []; 
+    createBoard(); 
     
 }
 
